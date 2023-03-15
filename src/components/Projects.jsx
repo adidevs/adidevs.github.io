@@ -3,15 +3,15 @@ export default function Projects() {
         {
             title: "My Portfolio",
             description: "This site you are currently on! Welcome to my 2nd Major Project. Built using React for code modularity and expanding this project further into a full fledged blog.",
-            github: "",
-            url: "https://github.com/adidevs/",
-            img: "./resources/simon-game.png"
+            github: "https://github.com/adidevs/adidevs.github.io",
+            url: "https://adidevs.netlify.app",
+            img: "./resources/portfolio.png"
         },
         {
             title: "Tasks",
             description: "A To Do List site / collab wall built on the MERN Stack. My first MERN project. This gave me insights and increased my understanding of the React frame work and making scalable projects in the coming times. The backend is connected to a live MongoDB server.",
-            github: "https://github.com/adidevs/",
-            url: "",
+            github: "https://github.com/adidevs/todo-app",
+            url: "https://todo-adidevs.netlify.app",
             img: "./resources/to-do.png"
         },
         {
