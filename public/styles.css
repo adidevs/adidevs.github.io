@@ -24,6 +24,18 @@ body{
     background-color: var(--bgcolor);
     color: #ffffff;   
 }
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.75s;
+}
+
+.show{
+    transform: translateX(0%);
+    filter: blur(0px);
+    opacity: 1;
+}
 
 h3 {
     font-size: x-large;
@@ -44,16 +56,21 @@ h3 {
 
 h1{
     font-size: 3rem;
+    transition-delay: 50ms;
 }
 
 
 .headerDesc {
     font-size: 1.2rem;
     margin-bottom: 5%;
+    transition-delay: 150ms;
 }
 .arrow{
     margin-top: 30vh;
     font-size: xx-large;
+}
+.profileLinks{
+    transition-delay: 200ms;
 }
 .profileLink {
     margin: 1% 1%;
@@ -67,14 +84,15 @@ nav {
     flex-shrink: 0;
     backdrop-filter: blur(5px);
     padding: 1.5% 2%;
+    z-index: 90;
 
 }
 
 .navItems {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
-    flex-shrink: 0;
-    width: 45vw;
+    column-gap: 50px;
 }
 
 .resumeLink {
@@ -95,11 +113,13 @@ nav {
 
 a {
     text-decoration: none;
-    color: #ffffff
+    color: #ffffff;
+    transition: color 0.5s ease;
 }
 
 a:hover{
     color: var(--activcolor);
+    transition: color 0.05s ease;
 }
 
 .menuIcon {
@@ -125,6 +145,7 @@ li {
 
 section {
     padding: 2%;
+    transition: background-color 0.2s ease-in-out;
 }
 section:hover{
     background-color: #191B44;
@@ -155,11 +176,13 @@ section:hover{
     padding: 2%;
     margin: 1.5% 1.5%;
     font-size: large;
+    transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 .skillItem:hover{
     background-color: var(--activcolor);
     color: #ffffff;
+    transition: color 0.05s ease, background-color 0.05s ease;
 }
 
 .projectCard {
