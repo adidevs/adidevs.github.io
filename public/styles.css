@@ -1,3 +1,5 @@
+/* Styles for root, body and links */
+
 :root{
     --bgcolor: #191C47;
     --activcolor: #FEAD2A;
@@ -24,6 +26,20 @@ body{
     background-color: var(--bgcolor);
     color: #ffffff;   
 }
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.5s ease;
+}
+
+a:hover{
+    color: var(--activcolor);
+    transition: color 0.05s ease;
+}
+
+/* Styles for slide in animation */
+
 .hidden{
     opacity: 0;
     filter: blur(5px);
@@ -37,45 +53,8 @@ body{
     opacity: 1;
 }
 
-h3 {
-    font-size: x-large;
-}
+/* Styles for NavBar */
 
-#hero {
-    height: 90vh;
-}
-
-.header {
-    margin: 30vh 5% 1vh;
-    text-align: center;
-}
-
-.greeting{
-    font-size: 2rem;
-}
-
-h1{
-    font-size: 3rem;
-    transition-delay: 50ms;
-}
-
-
-.headerDesc {
-    font-size: 1.2rem;
-    margin-bottom: 5%;
-    transition-delay: 150ms;
-}
-.arrow{
-    margin-top: 30vh;
-    font-size: xx-large;
-}
-.profileLinks{
-    transition-delay: 200ms;
-}
-.profileLink {
-    margin: 1% 1%;
-    font-size: 25px;
-}
 nav {
     position: fixed;
     display: flex;
@@ -85,7 +64,6 @@ nav {
     backdrop-filter: blur(5px);
     padding: 1.5% 2%;
     z-index: 90;
-
 }
 
 .navItems {
@@ -111,17 +89,6 @@ nav {
     transition: ease-in-out 0.1s;
 }
 
-a {
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.5s ease;
-}
-
-a:hover{
-    color: var(--activcolor);
-    transition: color 0.05s ease;
-}
-
 .menuIcon {
     display: none;
     border: none;
@@ -134,25 +101,67 @@ a:hover{
     background-color: #ffffff;
     margin: 4px auto;
 }
-li {
-    list-style: none;
 
-}
-
-.hero {
-    padding-top: 90px;
-}
+/* Common styles for sections */
 
 section {
     padding: 2%;
     transition: background-color 0.2s ease-in-out;
 }
+
 section:hover{
     background-color: #191B44;
 }
+
 .sectionHeader{
     margin: 4% 0%;
 }
+
+/* Styles for Hero Section */
+
+#hero {
+    height: 90vh;
+}
+
+.header {
+    margin: 30vh 5% 1vh;
+    text-align: center;
+}
+
+.greeting{
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+    transition-delay: 50ms;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+.headerDesc {
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+    transition-delay: 150ms;
+}
+
+.profileLinks{
+    transition-delay: 200ms;
+}
+
+.profileLink {
+    margin: 1% 1%;
+    font-size: 25px;
+}
+
+li {
+    list-style: none;
+
+}
+
+/* Styles for About & Skills Sections */
 
 #about p, .skillsContainer {
     padding: 5%;
@@ -185,6 +194,8 @@ section:hover{
     transition: color 0.05s ease, background-color 0.05s ease;
 }
 
+/* Styles for Projects Section */
+
 .projectCard {
     display: flex;
     margin: 0.5% 0.1%;
@@ -204,6 +215,8 @@ section:hover{
     margin: 2%;
     font-size: 30px;
 }
+
+/* Styles for Footer Section */
 
 #footer {
     background-color: var(--bgcolor);
@@ -236,6 +249,12 @@ section:hover{
     }
 
     .navItems {
+        display: none;
+    }
+
+    .active {
+        display: flex;
+        max-height: 100%;
         flex-direction: column;
         justify-content: space-between;
         height: 30vh;
@@ -256,11 +275,6 @@ section:hover{
         background-color: var(--activcolor);
     }
 
-    .container {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
     .greeting{
         font-size: 1.75rem;
     }
@@ -275,6 +289,11 @@ section:hover{
         margin-bottom: 5%;
     }
 
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     #about,
     #skill {
         width: 100%;
@@ -284,15 +303,6 @@ section:hover{
     .skillItem{
         background-color: var(--activcolor);
         color: #000000;
-    }
-
-    .navItems {
-        display: none;
-        width: 100%;
-    }
-
-    .active {
-        display: flex;
     }
 
     .projectCard {
