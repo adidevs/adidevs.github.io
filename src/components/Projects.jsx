@@ -1,6 +1,13 @@
 export default function Projects() {
     const projects = [
         {
+            title: "Quick Call",
+            description: "A one-on-on video call app built using Next.js and TypeScript, establishes WebRTC and WebSockets through PeerJS and Socket.IO respectively",
+            github: "https://github.com/adidevs/quickcall",
+            url: "https://quick-call.vercel.app",
+            img: "./resources/QuickCall.jpeg"
+        },
+        {
             title: "My Portfolio",
             description: "This site you are currently on! Welcome to my 2nd Major Project. Built using React for code modularity and expanding this project further into a full fledged blog.",
             github: "https://github.com/adidevs/adidevs.github.io",

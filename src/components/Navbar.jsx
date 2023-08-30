@@ -16,7 +16,7 @@ export default function Navbar(props) {
         <li><a className="navItem" href="#projects">Projects</a></li>
         <li><a className="navItem" href="#skills">Skills</a></li>
         <li><a className="navItem" href="#about">About</a></li>
-        <li><a href="./resources/Aditya_Sharma.pdf" className="navItem resumeLink">Resume  <i class="fa-solid fa-file-export"></i></a></li>
+        <li><a href="./resources/Aditya_Sharma_Resume.pdf" className="navItem resumeLink">Resume  <i class="fa-solid fa-file-export"></i></a></li>
       </ul>
       
     </nav>
