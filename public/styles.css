@@ -3,6 +3,7 @@
 :root{
     --bgcolor: #191C47;
     --activcolor: #FEAD2A;
+    --color: #ffffff;
 }
 
 ::-webkit-scrollbar {
@@ -24,12 +25,12 @@
 
 body{
     background-color: var(--bgcolor);
-    color: #ffffff;   
+    color: var(--color);   
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--color);
     transition: color 0.5s ease;
 }
 
@@ -84,7 +85,7 @@ nav {
 }
 
 .resumeLink:hover {
-    color: white;
+    color: var(--color);
     background-color: var(--activcolor);
     transition: ease-in-out 0.1s;
 }
@@ -98,7 +99,7 @@ nav {
 .menuIcon .bar {
     width: 20px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: var(--color);
     margin: 4px auto;
 }
 
@@ -110,7 +111,7 @@ section {
 }
 
 section:hover{
-    background-color: #191B44;
+    /* background-color: #191B44; */
 }
 
 .sectionHeader{
