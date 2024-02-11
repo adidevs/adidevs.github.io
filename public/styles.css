@@ -1,9 +1,9 @@
 /* Styles for root, body and links */
 
 :root{
-    --bgcolor: #191C47;
+    --bgcolor: #ffffff;
     --activcolor: #FEAD2A;
-    --color: #ffffff;
+    --color: #000000;
 }
 
 ::-webkit-scrollbar {
@@ -103,16 +103,11 @@ nav {
     margin: 4px auto;
 }
 
-/* Common styles for sections */
-
 section {
     padding: 2%;
     transition: background-color 0.2s ease-in-out;
 }
 
-section:hover{
-    /* background-color: #191B44; */
-}
 
 .sectionHeader{
     margin: 4% 0%;
