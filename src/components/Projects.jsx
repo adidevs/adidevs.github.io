@@ -1,8 +1,15 @@
 export default function Projects() {
     const projects = [
         {
+            title: "ProFlow",
+            description: "ProFlow is a dynamic and modern project management tool built using Next.js and TypeScript. It empowers users to create, manage, and track projects and tasks seamlessly. Users can sign in using Google OAuth, create multiple projects, assign team members, and manage tasks with features such as descriptions, priorities, and labels. Additionally, ProFlow integrates with Google Gemini AI, assisting users by automatically generating tasks based on the project title and description. Tasks can be viewed in both List View and Kanban View, where users can drag and drop tasks to organize them efficiently.",
+            github: "https://github.com/adidevs/proflow",
+            url: "https://proflow-adidevs.vercel.app",
+            img: "./resources/ProFlow.png"
+        },
+        {
             title: "Quick Call",
-            description: "A one-on-on video call app built using Next.js and TypeScript, establishes WebRTC and WebSockets through PeerJS and Socket.IO respectively",
+            description: "QuickCall is a video conferencing application built with Next.js, leveraging MongoDB via Mongoose for data management, video calls powered by Stream through getstream.io, and user authentication through NextAuth.",
             github: "https://github.com/adidevs/quickcall",
             url: "https://quick-call.vercel.app",
             img: "./resources/QuickCall.jpeg"
